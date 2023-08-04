@@ -1,0 +1,44 @@
+.main {
+	@apply flex justify-center bg-blue-medium min-h-full flex-auto;
+	.wrapper {
+		@apply max-w-[588px] max-h-[635px] relative rounded-[20px] px-[78px] py-[40px] bg-white text-center mt-[60px];
+		.graduation {
+			@apply flex flex-col items-center;
+			h1 {
+				@apply font-semibold text-[36px] mt-[36px] leading-tight;
+			}
+		}
+		.form {
+			@apply mt-[40px] max-w-[228px] mx-auto;
+			div {
+				@apply flex flex-col justify-center mb-[20px] gap-[24px];
+				input {
+					@apply rounded-[20px] py-[5px] px-[15px] outline-none placeholder:text-[15px] placeholder:text-[#858383] flex-auto placeholder:font-normal;
+				}
+
+				.input-error {
+					@apply border border-solid border-red-300;
+				}
+			}
+		}
+		.send {
+			@apply mt-[30px] flex justify-between items-center;
+			h3 {
+				@apply text-[15px] font-semibold ml-3;
+			}
+			button {
+				@apply rounded-[30px] bg-[#DE5BFF] hover:bg-[#D738FF] transition-colors duration-300 text-white text-[15px] py-[7px] px-[30px] w-[100%];
+			}
+		}
+		.deal {
+			@apply text-[11px] font-light text-center mt-[45px] max-w-[350px] mx-auto;
+			span {
+				color: rgba(121, 18, 251, 0.9);
+				@apply cursor-pointer;
+			}
+		}
+	}
+}
+.input-normal {
+	border: 1px solid rgba(222, 91, 255, 0.5);
+}

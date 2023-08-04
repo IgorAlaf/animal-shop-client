@@ -1,0 +1,16 @@
+.wrapper {
+	@apply pt-[40px] pl-[78px] rounded-[20px] h-[564px];
+	flex: 0 0 384px;
+	background-color: rgba(255, 255, 255, 0.37);
+	.nav {
+	}
+	.list {
+		@apply flex flex-col gap-y-[14px];
+		.item {
+		}
+		.link {
+			@apply text-[24px] hover:text-gray-600 transition-colors duration-300;
+			color: rgba(0, 0, 0, 1);
+		}
+	}
+}

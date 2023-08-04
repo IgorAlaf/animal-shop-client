@@ -1,0 +1,14 @@
+.wrapper {
+	@apply mt-[20px];
+	.button {
+		@apply rounded-[10px] bg-[#DE5BFF] pr-[38px] py-[9px] pl-[10px] text-[15px] font-semibold text-white flex gap-[9px] items-center;
+	}
+	.add-product {
+		@apply mt-[53px] flex flex-col max-w-[282px] text-center items-center p-[20px] rounded-[20px];
+		border: 1px dashed rgba(0, 0, 0, 0.6);
+		p {
+			@apply text-[12px];
+			font-family: 'Mulish', serif;
+		}
+	}
+}

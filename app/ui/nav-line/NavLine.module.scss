@@ -1,0 +1,14 @@
+.wrapper {
+}
+.list {
+	@apply flex items-center gap-[8px];
+
+	.item {
+		@apply flex items-center gap-[8px];
+	}
+	.link {
+		font-family: 'Mulish', serif;
+		@apply text-[16px] hover:text-[#424040F0] transition-colors duration-300;
+		color: rgba(128, 128, 128, 0.94);
+	}
+}

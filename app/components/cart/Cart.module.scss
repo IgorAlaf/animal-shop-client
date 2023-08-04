@@ -1,0 +1,13 @@
+.wrapper {
+	@apply h-full w-full mt-[40px];
+	div {
+		@apply max-w-[270px] text-center mx-auto flex flex-col items-center;
+		.title {
+			@apply text-[36px] font-black mt-[20px] leading-none;
+			font-family: 'Mulish', serif;
+		}
+	}
+	.button {
+		@apply rounded-[10px] bg-[#1BAE2A] text-white py-[8px] px-[55px] mt-[35px] hover:bg-[#22D133] transition-colors duration-300;
+	}
+}

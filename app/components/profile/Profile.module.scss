@@ -1,0 +1,26 @@
+.wrapper {
+	@apply mt-[53px];
+	.list {
+		@apply flex gap-y-[55px] gap-x-[24px] flex-wrap;
+		.item {
+			flex: 0 1 179px;
+			@apply bg-white rounded-[15px];
+			&:nth-child(4) {
+				span {
+					@apply mt-0;
+				}
+			}
+			&:nth-child(5) {
+				span {
+					@apply mt-0;
+				}
+			}
+		}
+	}
+}
+.link {
+	@apply text-[20px] leading-none flex flex-col px-[15px] pt-[13px] pb-[10px] hover:text-[#DB6AF8] transition-colors duration-300;
+	span {
+		@apply block mt-[9px];
+	}
+}

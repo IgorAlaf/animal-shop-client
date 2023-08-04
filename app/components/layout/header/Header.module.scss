@@ -1,0 +1,19 @@
+.header {
+	@apply bg-blue-light;
+	.wrapper {
+		@apply py-[4px] flex justify-between items-center max-w-[1200px] mx-auto;
+		.logo {
+			@apply font-semibold text-[36px];
+		}
+		.nav {
+			.list {
+				@apply flex gap-[20px] items-center;
+			}
+			.item {
+			}
+			.link {
+				@apply flex gap-[9px] font-light items-center hover:text-[#8D35A4] transition-colors duration-300 py-[20px];
+			}
+		}
+	}
+}

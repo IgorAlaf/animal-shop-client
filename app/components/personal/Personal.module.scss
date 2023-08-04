@@ -1,0 +1,56 @@
+.wrapper {
+	background: rgba(255, 255, 255, 0.37);
+	@apply rounded-[30px] py-[40px] pl-[74px] mt-[53px] mb-[150px];
+	.main {
+		@apply flex flex-col;
+		.title {
+			font-family: 'Mulish', serif;
+			@apply text-[24px] font-medium;
+		}
+
+		.form {
+			h4 {
+				@apply text-[11px];
+			}
+
+			input {
+				@apply outline-none bg-transparent rounded-[8px] flex w-[410px] py-[6px] px-[10px] mt-[6px];
+				border: 1px solid rgba(0, 0, 0, 0.5);
+			}
+			label {
+				@apply mt-[16px] block;
+			}
+			.wrapper-bottom {
+				@apply flex gap-[24px] items-end;
+				label {
+					&:first-child {
+						@apply w-[104px];
+					}
+				}
+				input {
+					@apply w-[100%];
+				}
+				button {
+					@apply py-[6.4px] flex px-[35px];
+					border: 1px solid rgba(0, 0, 0, 0.5);
+					font-family: 'Mulish', serif;
+					&:last-child {
+						@apply rounded-r-[10px] border-l-0;
+					}
+					&:first-child {
+						@apply rounded-l-[10px];
+					}
+				}
+			}
+			.sex {
+				@apply flex;
+				button {
+					@apply mt-[6px];
+				}
+			}
+		}
+		.button {
+			@apply text-white font-semibold text-[15px] w-[410px] py-[9px] mt-[35px] bg-[#DE5BFF] rounded-[30px];
+		}
+	}
+}

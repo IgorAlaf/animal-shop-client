@@ -1,0 +1,9 @@
+.wrapper {
+	@apply h-full w-full flex;
+	div {
+		@apply flex flex-col items-center mt-[53px] ml-[270px];
+		.text {
+			@apply text-[36px] font-bold mt-[40px];
+		}
+	}
+}

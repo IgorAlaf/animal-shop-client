@@ -1,0 +1,70 @@
+.wrapper {
+	@apply mt-[53px] flex;
+	.add {
+		@apply py-[20px] rounded-[20px] px-[45px] flex flex-col items-center text-center;
+		border: 1px dashed rgba(0, 0, 0, 0.6);
+		.text {
+			font-family: 'Mulish', serif;
+			@apply text-[13px] leading-none;
+			font-weight: 600;
+		}
+		.button {
+			@apply mt-[12px] hover:bg-[#D738FF] transition-colors duration-300 bg-purple-bg rounded-[10px] text-white text-[15px] font-semibold py-[10px] px-[35px];
+		}
+	}
+}
+.overlay {
+	position: fixed;
+	width: 100vw;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	background-color: rgba(68, 68, 68, 0.48);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 15px;
+	overflow-y: scroll;
+}
+
+.modal {
+	background-color: rgb(255, 255, 255);
+	@apply px-[78px] py-[40px] rounded-[20px] relative mt-[385px] mb-[100px] w-[588px] flex flex-col items-center;
+	box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+	.close {
+		@apply absolute top-[19px] right-[17px];
+	}
+	.title {
+		@apply mt-[40px] font-semibold text-[36px];
+	}
+	.form {
+		@apply flex flex-col items-center;
+		form {
+			@apply mt-[54px];
+		}
+		h4 {
+			@apply text-[11px] font-light mb-[5px];
+		}
+		input {
+			@apply outline-none bg-transparent rounded-[8px] py-[7px] px-[24px] w-[432px] mb-[18px] placeholder:text-[#808080] font-medium;
+			border: 1px solid rgba(0, 0, 0, 0.5);
+			font-family: 'Mulish', serif;
+		}
+		.house {
+			@apply flex gap-[63px];
+			input {
+				@apply w-[102px] px-[5px];
+			}
+		}
+		textarea {
+			resize: none;
+			@apply w-[100%] rounded-[10px] px-[20px] py-[10px] h-[109px] placeholder:text-[#808080] font-medium;
+			font-family: 'Mulish', serif;
+			border: 1px solid rgba(0, 0, 0, 0.5);
+		}
+	}
+	.send {
+		@apply bg-[#979797] rounded-[30px] w-[100%] py-[10px] text-white mt-[30px] hover:bg-[#3a3a3a]  transition-colors ease-in-out duration-300;
+	}
+}
