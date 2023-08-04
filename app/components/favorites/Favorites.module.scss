@@ -1,7 +1,7 @@
 .wrapper {
 	@apply mt-[20px];
 	.button {
-		@apply rounded-[10px] bg-[#DE5BFF] pr-[38px] py-[9px] pl-[10px] text-[15px] font-semibold text-white flex gap-[9px] items-center;
+		@apply rounded-[10px] bg-[#DE5BFF] pr-[38px] py-[9px] pl-[10px] text-[15px] font-semibold text-white flex gap-[9px] items-center hover:bg-[#DB4CFF] transition-colors duration-300;
 	}
 	.add-product {
 		@apply mt-[53px] flex flex-col max-w-[282px] text-center items-center p-[20px] rounded-[20px];

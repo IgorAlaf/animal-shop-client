@@ -50,7 +50,7 @@
 			}
 		}
 		.button {
-			@apply text-white font-semibold text-[15px] w-[410px] py-[9px] mt-[35px] bg-[#DE5BFF] rounded-[30px];
+			@apply text-white font-semibold text-[15px] w-[410px] py-[9px] mt-[35px] bg-[#DE5BFF] rounded-[30px] hover:bg-[#DB4CFF] transition-colors duration-300;
 		}
 	}
 }
