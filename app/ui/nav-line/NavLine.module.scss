@@ -12,3 +12,11 @@
 		color: rgba(128, 128, 128, 0.94);
 	}
 }
+
+@media (max-width: 869px) {
+	.list {
+		.link {
+			@apply text-[12px] relative;
+		}
+	}
+}

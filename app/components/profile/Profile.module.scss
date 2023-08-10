@@ -24,3 +24,37 @@
 		@apply block mt-[9px];
 	}
 }
+@media (max-width: 869px) {
+	.wrapper {
+		@apply px-[40px] mt-[40px];
+		.image {
+			width: 20px;
+			height: 20px;
+		}
+		.list {
+			@apply justify-between items-stretch gap-y-[20px];
+			.item {
+				flex: 1 0 45%;
+			}
+			.link {
+				@apply flex-row gap-x-[10px] py-[24px] items-center justify-center;
+				span {
+					@apply mt-0 text-[14px] font-semibold;
+					font-family: 'Mulish', serif;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 544px) {
+	.wrapper {
+		@apply mt-[13px] tr:px-[40px];
+		.list {
+			@apply gap-y-[20px] items-center justify-center;
+			.item {
+				flex: 1 0 100%;
+			}
+		}
+	}
+}

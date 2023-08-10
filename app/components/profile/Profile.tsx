@@ -1,9 +1,11 @@
+'use client'
 import { FC } from 'react'
 import { profileItems } from './profile.items'
 import { link } from 'fs'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from './Profile.module.scss'
+import useResize from '@/app/hooks/useResize'
 const Profile: FC = () => {
 	return (
 		<div className={styles.wrapper}>
@@ -11,7 +13,13 @@ const Profile: FC = () => {
 				{profileItems.map((item, key) => (
 					<li className={styles.item} key={key}>
 						<Link className={styles.link} href={item.path}>
-							<Image src={item.icon} alt='icon' width={40} height={40} />
+							<Image
+								src={item.icon}
+								className={styles.image}
+								alt='icon'
+								width={40}
+								height={40}
+							/>
 							<span>{item.title}</span>
 						</Link>
 					</li>

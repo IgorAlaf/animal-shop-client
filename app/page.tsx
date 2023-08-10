@@ -1,5 +1,10 @@
 import Image from 'next/image'
+import MainPage from './components/main/MainPage'
 
 export default function Home() {
-	return <div>Hello world</div>
+	return (
+		<div>
+			<MainPage />
+		</div>
+	)
 }

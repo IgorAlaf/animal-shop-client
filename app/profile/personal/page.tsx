@@ -5,7 +5,7 @@ import { FC } from 'react'
 
 const PersonalPage: FC = () => {
 	return (
-		<div className='ml-[25px] flex-auto'>
+		<div className='ml-[25px] flex-auto tr:flex-none lg:ml-[0px]'>
 			<TemplateProfile
 				title='Личные данные'
 				list={[

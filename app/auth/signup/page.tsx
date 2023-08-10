@@ -49,7 +49,7 @@ const page: FC = () => {
 						height={101}
 					/>
 					<h1 className={styles.title}>
-						Зарегистрируйтесь,<br></br>чтобы получить бонусы
+						Зарегистрируйтесь,чтобы получить бонусы
 					</h1>
 				</div>
 				<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
@@ -70,12 +70,12 @@ const page: FC = () => {
 							placeholder='Имя'
 						/>
 						{errors.name?.type === 'required' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[49%] left-[14%]'>
+							<div className='text-red-500 text-sm md:text-[10px] md:top-[40%] tr:text-xs absolute top-[50.5%] left-[14%]'>
 								{errors.name?.message}
 							</div>
 						)}
 						{errors.name?.type === 'maxLength' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[49%] left-[14%]'>
+							<div className='text-red-500 text-sm md:text-[10px] md:top-[40%] tr:text-xs absolute top-[50.5%] left-[14%]'>
 								{errors.name?.message}
 							</div>
 						)}
@@ -95,12 +95,12 @@ const page: FC = () => {
 							placeholder='Фамилия'
 						/>
 						{errors.surname?.type === 'required' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[49%] left-[53%]'>
+							<div className='text-red-500 text-sm md:text-[10px] md:top-[46.5%] tr:text-xs absolute top-[50.5%] left-[14%]'>
 								{errors.surname?.message}
 							</div>
 						)}
 						{errors.surname?.type === 'maxLength' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[49%] left-[53%]'>
+							<div className='text-red-500 text-sm md:text-[10px] md:top-[46.5%] tr:text-xs absolute top-[50.5%] left-[14%]'>
 								{errors.surname?.message}
 							</div>
 						)}
@@ -123,12 +123,12 @@ const page: FC = () => {
 							placeholder='Email'
 						/>
 						{errors.email?.type === 'required' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[57%] left-[14%]'>
+							<div className='text-red-500 text-sm md:text-[10px] tr:text-xs absolute top-[53%] left-[14%]'>
 								{errors.email?.message}
 							</div>
 						)}
 						{errors.email?.type === 'pattern' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[57%] left-[14%]'>
+							<div className='text-red-500 text-sm tr:text-xs md:text-[10px] absolute top-[53%] left-[14%]'>
 								{errors.email?.message}
 							</div>
 						)}
@@ -148,12 +148,12 @@ const page: FC = () => {
 							placeholder='Пароль'
 						/>
 						{errors.password?.type === 'required' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[57%] left-[53%]'>
+							<div className='text-red-500 text-sm tr:text-xs md:text-[10px] absolute top-[59.5%] left-[14%]'>
 								{errors.password?.message}
 							</div>
 						)}
 						{errors.password?.type === 'minLength' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[57%] left-[53%]'>
+							<div className='text-red-500 text-sm tr:text-xs md:text-[10px] absolute top-[59.5%] left-[14%]'>
 								{errors.password?.message}
 							</div>
 						)}
@@ -170,7 +170,7 @@ const page: FC = () => {
 							placeholder='Номер телефона'
 						/>
 						{errors.phone?.type === 'required' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[65%] left-[14%]'>
+							<div className='text-red-500 text-sm tr:text-xs md:text-[10px] absolute top-[65.8%] left-[14%]'>
 								{errors.phone?.message}
 							</div>
 						)}
@@ -190,12 +190,12 @@ const page: FC = () => {
 							placeholder='Повторите пароль'
 						/>
 						{errors.recPassword?.type === 'required' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[65%] left-[53%]'>
+							<div className='text-red-500 text-sm tr:text-xs md:text-[10px] absolute top-[72%] left-[14%]'>
 								{errors.recPassword?.message}
 							</div>
 						)}
 						{errors.recPassword?.type === 'minLength' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[65%] left-[53%]'>
+							<div className='text-red-500 text-sm tr:text-xs md:text-[10px] absolute top-[72%] left-[14%]'>
 								{errors.recPassword?.message}
 							</div>
 						)}
@@ -212,7 +212,7 @@ const page: FC = () => {
 							placeholder='Город'
 						/>
 						{errors.city?.type === 'required' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[74%] left-[14%]'>
+							<div className='text-red-500 text-sm tr:text-xs md:text-[10px] absolute top-[79%] left-[14%]'>
 								{errors.city?.message}
 							</div>
 						)}

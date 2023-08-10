@@ -1,11 +1,11 @@
 .main {
 	@apply flex justify-center bg-blue-medium min-h-full flex-auto;
 	.wrapper {
-		@apply relative max-w-[588px] max-h-[696px] rounded-[20px] px-[78px] py-[40px] bg-white text-center mt-[60px];
+		@apply relative max-w-[588px] max-h-[680px] rounded-[20px] px-[78px] py-[40px] bg-white text-center mt-[40px];
 		.graduation {
 			@apply flex flex-col items-center;
 			h1 {
-				@apply font-semibold text-[36px] mt-[36px] leading-tight;
+				@apply font-semibold text-[36px]  mt-[36px] leading-tight;
 			}
 		}
 		.form {
@@ -29,6 +29,7 @@
 				@apply rounded-[30px] bg-[#DE5BFF] text-white text-[15px] py-[7px] px-[30px] hover:bg-[#D738FF] transition-colors duration-300;
 			}
 		}
+
 		.deal {
 			@apply text-[11px] font-light text-center mt-[27px] max-w-[290px] mx-auto;
 			span {
@@ -41,4 +42,84 @@
 
 .input-normal {
 	border: 1px solid rgba(222, 91, 255, 0.5);
+}
+
+@media (max-width: 834px) {
+	.main {
+		.wrapper {
+			@apply px-[51px] py-[20px] max-h-[533px] max-w-[479px];
+			.form {
+				@apply mt-[59px];
+				div {
+					@apply flex-col mb-[12px] gap-[12px];
+					input {
+						@apply py-[1px] px-[15px] placeholder:text-[10px] h-[22px] text-[12px];
+					}
+				}
+				.send {
+					@apply mt-[30px] flex-row;
+					h3 {
+						@apply text-[10px];
+					}
+					button {
+						@apply py-[3px] text-[10px] px-[60px];
+					}
+				}
+			}
+			.image {
+				width: 61px;
+				height: 61px;
+			}
+			.graduation {
+				h1 {
+					@apply text-[16px];
+				}
+			}
+
+			.deal {
+				@apply text-[8px] mt-[25px];
+			}
+		}
+	}
+}
+
+@media (max-width: 501px) {
+	.main {
+		.wrapper {
+			@apply px-[30px];
+		}
+	}
+}
+@media (max-width: 495px) {
+	.main {
+		.wrapper {
+			@apply px-[25px] max-w-[290px];
+			.form {
+				@apply mt-[40px];
+				div {
+					input {
+						@apply w-[100%] mx-auto px-[15px];
+					}
+				}
+				.send {
+					button {
+						@apply py-[4px] text-[8px] px-[20px];
+					}
+					h3 {
+						@apply text-[8px];
+					}
+				}
+			}
+			.deal {
+				@apply max-w-[185px] text-[7px];
+			}
+		}
+	}
+}
+@media (max-width: 350px) {
+	.main {
+		.wrapper {
+			@apply px-[25px] max-w-[270px];
+		}
+	}
 }

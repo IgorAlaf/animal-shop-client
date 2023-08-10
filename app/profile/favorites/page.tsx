@@ -5,7 +5,7 @@ import { FC } from 'react'
 
 const page: FC = () => {
 	return (
-		<div className='flex-auto ml-[25px]'>
+		<div className='flex-auto ml-[25px] lg:ml-[0px]'>
 			<TemplateProfile
 				title='Избранное'
 				list={[

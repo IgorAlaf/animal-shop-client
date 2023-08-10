@@ -7,6 +7,7 @@ const Cart: FC = () => {
 		<div className={styles.wrapper}>
 			<div>
 				<Image
+					className={styles.image}
 					alt='cart'
 					src='/images/food-cart.png'
 					width={240}

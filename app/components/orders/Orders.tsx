@@ -6,6 +6,7 @@ const Orders: FC = () => {
 		<div className={styles.wrapper}>
 			<div>
 				<Image
+					className={styles.image}
 					src={'/images/shopping.svg'}
 					alt='shopping'
 					width={240}

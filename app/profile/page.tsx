@@ -4,7 +4,7 @@ import TemplateProfile from '../ui/template-profile/TemplateProfile'
 
 export default function ProfilePage() {
 	return (
-		<div className='ml-[25px]'>
+		<div className='ml-[25px] lg:ml-[0px] '>
 			<TemplateProfile
 				title='Профиль'
 				list={[

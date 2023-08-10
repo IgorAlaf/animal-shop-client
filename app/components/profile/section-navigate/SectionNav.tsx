@@ -43,6 +43,26 @@ const SectionNav: FC = () => {
 					})}
 				</ul>
 			</nav>
+			<ul className={styles['mobile-menu']}>
+				<li className={cn(styles['mobile-menu__search'])}>
+					<Link className={styles['mobile-menu__link']} href={'/'}>
+						<Image
+							className={styles.image}
+							src={'/images/navigate-section/search.svg'}
+							width={12}
+							height={12}
+							alt='icon'
+						/>
+						<span>Поиск</span>
+					</Link>
+				</li>
+				<li className={styles['mobile-menu__catalog']}>
+					<button type='button' className={styles.button}>
+						<Image width={10} height={4} src='/images/menu.svg' alt='menu' />{' '}
+						<span>Каталог товаров</span>
+					</button>
+				</li>
+			</ul>
 		</div>
 	)
 }

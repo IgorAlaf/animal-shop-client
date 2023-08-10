@@ -11,3 +11,36 @@
 		@apply rounded-[10px] bg-[#1BAE2A] text-white py-[8px] px-[55px] mt-[35px] hover:bg-[#22D133] transition-colors duration-300;
 	}
 }
+
+@media (max-width: 870px) {
+	.wrapper {
+		@apply mt-[89px];
+		div {
+			.title {
+				@apply text-[22px] block max-w-[176px];
+			}
+		}
+		.button {
+			@apply px-[41px] text-[14px] py-[10px];
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.wrapper {
+		@apply mt-[89px];
+		.image {
+			width: 140px;
+			height: 140px;
+		}
+		div {
+			@apply max-w-[176px];
+			.title {
+				@apply text-[20px];
+			}
+		}
+		.button {
+			@apply px-[41px] text-[12px] py-[6px];
+		}
+	}
+}

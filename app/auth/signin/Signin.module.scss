@@ -42,3 +42,70 @@
 .input-normal {
 	border: 1px solid rgba(222, 91, 255, 0.5);
 }
+
+@media (max-width: 834px) {
+	.main {
+		.wrapper {
+			@apply max-h-[429px] w-[479px] px-[51px] py-[20px];
+			.graduation {
+				@apply flex flex-col items-center;
+				h1 {
+					@apply font-semibold text-[16px] mt-[26px] leading-tight;
+				}
+			}
+			.form {
+				@apply max-w-[100%];
+				div {
+					@apply gap-[17px];
+					input {
+						@apply px-[36px] py-[1px];
+					}
+				}
+			}
+			.deal {
+				@apply mt-[25px];
+			}
+			.send {
+				@apply mt-[18px];
+				h3 {
+					@apply text-[11px] font-semibold ml-3;
+				}
+				button {
+					@apply py-[3px];
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 495px) {
+	.main {
+		.wrapper {
+			@apply px-[25px] max-w-[290px];
+			.form {
+				@apply max-w-[200px];
+				div {
+					input {
+						@apply w-[100%] mx-auto px-[15px] text-[12px] py-[4px];
+					}
+				}
+			}
+			.send {
+				button {
+					@apply py-[3px];
+				}
+			}
+			.deal {
+				@apply max-w-[185px];
+			}
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	.main {
+		.wrapper {
+			@apply px-[25px] max-w-[270px];
+		}
+	}
+}

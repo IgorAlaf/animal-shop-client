@@ -7,3 +7,27 @@
 		}
 	}
 }
+@media (max-width: 869px) {
+	.wrapper {
+		@apply justify-center items-center;
+		div {
+			@apply ml-0;
+			.text {
+				@apply text-[32px];
+			}
+		}
+	}
+}
+@media (max-width: 544px) {
+	.wrapper {
+		.image {
+			width: 140px;
+			height: 140px;
+		}
+		div {
+			.text {
+				@apply text-[20px];
+			}
+		}
+	}
+}

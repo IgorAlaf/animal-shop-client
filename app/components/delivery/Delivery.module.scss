@@ -5,11 +5,58 @@
 		border: 1px dashed rgba(0, 0, 0, 0.6);
 		.text {
 			font-family: 'Mulish', serif;
-			@apply text-[13px] leading-none;
+			@apply text-[13px] leading-none max-w-[220px];
 			font-weight: 600;
 		}
 		.button {
 			@apply mt-[12px] hover:bg-[#D738FF] transition-colors duration-300 bg-purple-bg rounded-[10px] text-white text-[15px] font-semibold py-[10px] px-[35px];
+		}
+	}
+}
+
+@media (max-width: 869px) {
+	.wrapper {
+		@apply mt-[29px] px-[40px] w-screen;
+		.image {
+			width: 140px;
+			height: 140px;
+		}
+
+		.add {
+			@apply w-[100%] flex flex-col;
+			.text {
+				@apply min-w-[277px] mt-[18px];
+			}
+			.button {
+				@apply w-[170px] rounded-[5px] text-[10px] py-[7px] mt-[23px] tracking-wider;
+			}
+		}
+	}
+}
+
+@media (max-width: 544px) {
+	.wrapper {
+		.image {
+			width: 66px;
+			height: 66px;
+		}
+
+		.add {
+			.button {
+				@apply w-[277px] py-[5px];
+			}
+		}
+	}
+}
+@media (max-width: 395px) {
+	.wrapper {
+		.add {
+			.button {
+				@apply w-[200px];
+			}
+			.text {
+				@apply min-w-[220px];
+			}
 		}
 	}
 }
@@ -26,6 +73,7 @@
 	align-items: center;
 	padding: 0 15px;
 	overflow-y: scroll;
+	z-index: 3;
 }
 
 .modal {
@@ -59,7 +107,7 @@
 		}
 		textarea {
 			resize: none;
-			@apply w-[100%] rounded-[10px] px-[20px] py-[10px] h-[109px] placeholder:text-[#808080] font-medium;
+			@apply w-[100%] rounded-[10px] px-[20px] py-[10px] h-[109px] placeholder:text-[#808080] font-medium outline-none;
 			font-family: 'Mulish', serif;
 			border: 1px solid rgba(0, 0, 0, 0.5);
 		}

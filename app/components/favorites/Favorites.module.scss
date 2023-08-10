@@ -12,3 +12,41 @@
 		}
 	}
 }
+
+@media (max-width: 869px) {
+	.wrapper {
+		@apply px-[40px] mt-[10px];
+		.button {
+			@apply rounded-[8px] text-[12px]  pl-[50px] pr-[80px] py-[3px] font-medium;
+		}
+		.add-product {
+			@apply mt-[31px] max-w-[100%];
+			p {
+				@apply text-[16px] font-medium max-w-[390px] block  mt-[18px];
+				font-family: 'Mulish', serif;
+			}
+		}
+		.image {
+			width: 140px;
+			height: 140px;
+		}
+	}
+}
+
+@media (max-width: 544px) {
+	.wrapper {
+		@apply px-[40px] mt-[10px];
+		.button {
+			@apply rounded-[20px] text-[10px] pl-[10px] pr-[14px] py-[4px];
+		}
+		.add-product {
+			p {
+				@apply text-[13px];
+			}
+		}
+		.image {
+			width: 66px;
+			height: 66px;
+		}
+	}
+}

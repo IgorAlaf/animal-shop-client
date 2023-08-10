@@ -8,10 +8,15 @@ const DeliveryAddress: FC = () => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.add}>
-				<Image alt='truck' src='/images/truck.png' width={96} height={96} />
+				<Image
+					className={styles.image}
+					alt='truck'
+					src='/images/truck.png'
+					width={96}
+					height={96}
+				/>
 				<p className={styles.text}>
-					Добавьте адрес чтобы быстрее
-					<br /> оформлять заказы
+					Добавьте адрес чтобы быстрее оформлять заказы
 				</p>
 				<button onClick={e => setShowModal(true)} className={styles.button}>
 					Добавьте адрес

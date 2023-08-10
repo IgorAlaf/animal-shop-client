@@ -1,7 +1,7 @@
 .header {
-	@apply bg-blue-light;
+	@apply bg-blue-light relative z-[3];
 	.wrapper {
-		@apply py-[4px] flex justify-between items-center max-w-[1200px] mx-auto;
+		@apply py-[4px] px-[40px] flex justify-between items-center max-w-[1260px] mx-auto;
 		.logo {
 			@apply font-semibold text-[36px];
 		}
@@ -9,11 +9,53 @@
 			.list {
 				@apply flex gap-[20px] items-center;
 			}
-			.item {
-			}
 			.link {
 				@apply flex gap-[9px] font-light items-center hover:text-[#8D35A4] transition-colors duration-300 py-[20px];
 			}
 		}
+	}
+}
+.burger {
+	@apply hidden cursor-pointer;
+	span {
+		height: 3px;
+		width: 25px;
+		background-color: black;
+	}
+}
+
+@media (max-width: 869px) {
+	.burger {
+		@apply flex flex-col gap-y-[3px];
+	}
+
+	.header {
+		.wrapper {
+			@apply py-[5px];
+			.nav {
+				@apply hidden;
+			}
+			.logo {
+				@apply text-[24px];
+			}
+		}
+	}
+}
+
+@media (min-width: 870px) {
+	.rela {
+		.modal-menu {
+			@apply hidden;
+		}
+	}
+}
+
+.modal-menu {
+	@apply px-[40px] absolute overflow-y-hidden top-0 pt-[96px] bottom-0 left-0 right-0 bg-[#94BEF9] z-[2];
+	.modal-list {
+		@apply flex flex-col gap-y-[8px];
+	}
+	.link {
+		@apply flex gap-x-[12px] text-black text-[14px];
 	}
 }

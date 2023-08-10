@@ -5,7 +5,7 @@ import { FC } from 'react'
 
 export default function page() {
 	return (
-		<div className='ml-[25px]'>
+		<div className='ml-[25px] lg:ml-[0px]'>
 			<TemplateProfile
 				title='Адреса доставки'
 				list={[

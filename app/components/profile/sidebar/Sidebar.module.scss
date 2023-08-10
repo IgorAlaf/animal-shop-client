@@ -14,3 +14,8 @@
 		}
 	}
 }
+@media (max-width: 869px) {
+	.wrapper {
+		@apply hidden;
+	}
+}

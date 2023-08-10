@@ -15,6 +15,7 @@ const Favorites: FC = () => {
 			</button>
 			<div className={styles['add-product']}>
 				<Image
+					className={styles.image}
 					src='/images/hand-heart.png'
 					alt='image'
 					width={96}

@@ -12,6 +12,7 @@ import { login } from '@/app/store/user/user.actions'
 import { IAuthLogin } from '@/app/services/auth/auth.interface'
 import { redirect } from 'next/navigation'
 import { useAppSelector } from '@/app/hooks/useAppSelector'
+import useResize from '@/app/hooks/useResize'
 const page: FC = () => {
 	const {
 		register,
@@ -20,6 +21,7 @@ const page: FC = () => {
 	} = useForm<ISigninAuth>({ mode: 'onChange' })
 	const dispatch = useAppDispatch()
 	const { user } = useAppSelector(store => store.userReducer)
+	const { isScreenMd, isScreenSm } = useResize()
 	const onSubmit: SubmitHandler<ISigninAuth> = async data => {
 		const cred: IAuthLogin = {
 			email: data.email,
@@ -41,8 +43,8 @@ const page: FC = () => {
 						className={styles.image}
 						src='/images/dog.png'
 						alt='Dog'
-						width={101}
-						height={101}
+						width={isScreenMd ? 101 : 61}
+						height={isScreenMd ? 101 : 61}
 					/>
 					<h1 className={styles.title}>
 						Войти,<br></br>чтобы получить бонусы
@@ -67,12 +69,12 @@ const page: FC = () => {
 							placeholder='Email'
 						/>
 						{errors.email?.type === 'required' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[54%] left-[31%]'>
+							<div className='text-red-500 text-sm tr:text-xs absolute top-[54%] left-[31%] md:top-[49.8%] md:left-[12%] hr:left-[15%] '>
 								{errors.email?.message}
 							</div>
 						)}
-						{errors.email?.type === 'pattern' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[54%] left-[31%]'>
+						{errors.email?.type === 'pattern' && isScreenSm && (
+							<div className='text-red-500 text-sm tr:text-xs absolute top-[54%] left-[31%] md:top-[49.8%] md:left-[12%]'>
 								{errors.email?.message}
 							</div>
 						)}
@@ -92,12 +94,12 @@ const page: FC = () => {
 							placeholder='Пароль'
 						/>
 						{errors.password?.type === 'required' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[64%] left-[31%]'>
+							<div className='text-red-500 text-sm tr:text-xs absolute top-[64%] left-[31%] md:top-[60.5%] md:left-[12%] hr:left-[15%]'>
 								{errors.password?.message}
 							</div>
 						)}
 						{errors.password?.type === 'minLength' && (
-							<div className='text-red-500 text-sm tr:text-xs absolute top-[64%] left-[31%]'>
+							<div className='text-red-500 text-sm tr:text-xs absolute top-[64%] left-[31%] md:top-[60.5%] md:left-[12%] hr:left-[15%]'>
 								{errors.password?.message}
 							</div>
 						)}
